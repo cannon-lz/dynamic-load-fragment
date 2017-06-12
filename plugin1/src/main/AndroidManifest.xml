@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhangly.plugin1">
+
+    <application>
+        <meta-data
+            android:name="mainFragment"
+            android:value="com.zhangly.plugin1.MainFragment" />
+        <meta-data
+            android:name="name"
+            android:value="LoginPlugin" />
+        <meta-data
+            android:name="version"
+            android:value="100" />
+    </application>
+</manifest>
