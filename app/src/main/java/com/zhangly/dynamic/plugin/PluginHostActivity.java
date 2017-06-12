@@ -32,6 +32,8 @@ public class PluginHostActivity extends AppCompatActivity {
         String path = intent.getStringExtra("path");
         mPlugin = PluginManager.getInstance().install(this, path);
 
+        setTitle(mPlugin.getPath() + "/" + mPlugin.getName());
+
         if (mPlugin != null) {
 
             try {

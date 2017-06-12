@@ -37,7 +37,7 @@ public class PluginManager {
     }
 
     public Plugin install(Context context, String pluginPath) {
-        context = context.getApplicationContext();
+        //context = context.getApplicationContext();
         PackageInfo packageInfo = getPackageInfo(context, pluginPath);
         String pluginName = packageInfo.applicationInfo.metaData.getString("name");
         Plugin plugin = mInstalled.get(pluginName);
